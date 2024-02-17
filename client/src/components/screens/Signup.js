@@ -40,7 +40,7 @@ const Signup = () =>{
         if(!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)){
             return M.toast({html:"Invalid email", classes:"#f44336 red"})
         }
-        fetch("http://localhost:5000/signup",{
+        fetch("https://instaclone442f.onrender.com/signup",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"
