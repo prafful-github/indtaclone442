@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 const PORT = process.env.PORT ||5000
+const path = require('path');
 // oKYYAfdtXxI5IgWS password of username = praffulkumar121 on mongodb
 const {MONGOURI} = require('./config/keys')
 // const cors = require('cors');
