@@ -38,16 +38,6 @@ const customMiddleware = (req, res, next)=>{
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-app.get('/',(req,res)=>{
-    res.send("hello world")
-    console.log("in home")
-})
-
-app.get('/about',customMiddleware,(req, res)=>{
-    res.send("about page")
-    console.log("in about page")
-})
-
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
